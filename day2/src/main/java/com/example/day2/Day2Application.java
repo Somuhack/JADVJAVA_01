@@ -2,12 +2,9 @@ package com.example.day2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController
+// @RestController
 @SpringBootApplication
 public class Day2Application {
 
@@ -15,9 +12,9 @@ public class Day2Application {
 		SpringApplication.run(Day2Application.class, args);
 		
 	}
-	@GetMapping("/hello")
-	public String welcome(@RequestParam(value ="name",defaultValue = "hjh") String name){
-		 return String.format("Hello %s!", name);
-	}
+	// @GetMapping("/hello")
+	// public String welcome(@RequestParam(value ="name",defaultValue = "hjh") String name){
+	// 	 return String.format("Hello %s!", name);
+	// }
 
 }

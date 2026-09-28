@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+    <h1>Wellcome</h1>
+    <p th:text="|Name is : ${name}|"></p>
+    <p th:text="|Age is : ${age}|"></p>
+    <p th:text="|Adress is : ${address}|"></p>
+    <button type="button" class="btn btn-primary">Primary</button>
+</body>
+</html>
